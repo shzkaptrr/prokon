@@ -18,7 +18,6 @@ class SubMateri extends Model
         'judul_sub_materi',
         'tipe_materi',
         'konten_path',
-        'konten_teks',
         'durasi',
         'urutan',
     ];

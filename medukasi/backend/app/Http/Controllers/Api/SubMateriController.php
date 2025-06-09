@@ -40,7 +40,6 @@ class SubMateriController extends Controller
             'judul_sub_materi' => 'required|string|max:255',
             'tipe_materi' => 'required|in:video,teks,pdf,kuis,latihan,dokumen_eksternal',
             'konten_path' => 'nullable|string', // Bisa diubah jadi file|mimes:mp4,pdf,dst. jika ingin upload file
-            'konten_teks' => 'nullable|string',
             'durasi' => 'nullable|integer|min:0',
             'urutan' => 'required|integer|min:0',
         ]);
@@ -68,7 +67,6 @@ class SubMateriController extends Controller
             'judul_sub_materi' => $request->judul_sub_materi,
             'tipe_materi' => $request->tipe_materi,
             'konten_path' => $kontenPath, // Gunakan path yang diupload atau dari input
-            'konten_teks' => $request->konten_teks,
             'durasi' => $request->durasi,
             'urutan' => $request->urutan,
         ]);
@@ -128,7 +126,6 @@ class SubMateriController extends Controller
             'judul_sub_materi' => 'required|string|max:255',
             'tipe_materi' => 'required|in:video,teks,pdf,kuis,latihan,dokumen_eksternal',
             'konten_path' => 'nullable|string', // Bisa diubah jadi file|mimes:mp4,pdf,dst. jika ingin upload file
-            'konten_teks' => 'nullable|string',
             'durasi' => 'nullable|integer|min:0',
             'urutan' => 'required|integer|min:0',
         ]);
@@ -160,7 +157,6 @@ class SubMateriController extends Controller
             'judul_sub_materi' => $request->judul_sub_materi,
             'tipe_materi' => $request->tipe_materi,
             'konten_path' => $kontenPath,
-            'konten_teks' => $request->konten_teks,
             'durasi' => $request->durasi,
             'urutan' => $request->urutan,
         ]);

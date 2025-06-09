@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('judul_sub_materi'); // Lesson Title
             $table->enum('tipe_materi', ['video', 'teks', 'pdf', 'kuis', 'latihan', 'dokumen_eksternal']); // Type of lesson
             $table->string('konten_path')->nullable(); // Path to video/pdf file or external URL
-            $table->longText('konten_teks')->nullable(); // Direct text content for 'teks' type
             $table->integer('durasi')->nullable(); // Duration for video (in minutes)
             $table->integer('urutan'); // Order of lesson within a module
             $table->timestamps();
